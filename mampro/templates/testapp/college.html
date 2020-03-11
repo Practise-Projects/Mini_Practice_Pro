@@ -1,0 +1,7 @@
+<h1>{{  stu.Student_Name }}</h1>
+<h3> {{ stu.Enrollment_no }}</h3>
+<ol>
+    {% for S in stu.student_set.all %}
+        <li> {{S.College_id }} - {{ S.College_Name }}</li>
+    {% endfor %}
+</ol>

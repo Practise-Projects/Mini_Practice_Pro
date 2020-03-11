@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+
+             <h3>hello, welcome Students</h3>
+        {% if all_stu %}
+
+            <ul>
+                {%  for st in all_stu %}
+                <li><a href="college/{{ student.id }}/"> {{  st.Student_Name }}</a> </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <h3>you dont have any Students</h3>
+        {% endif %}
+<button type="button" class="btn btn-primary" > <a href="C:\Users\Dell\Documents\WEB_DEVLOPMENT\Udemy\The NewWoston\Mini_Practice_Pro\mampro\templates\mamapp\button.html" > LOG IN </a></button>
+
+
+
+    </div>
+</div>
+</body>
+</html>
