@@ -24,7 +24,7 @@
 
             <ul>
                 {%  for st in all_stu %}
-                <li><a href="college/{{ student.id }}/"> {{  st.Student_Name }}</a> </li>
+                <li><a href="/college/{{ st.id }}/"> {{  st.Student_Name }}</a> </li>
                 {% endfor %}
             </ul>
         {% else %}
