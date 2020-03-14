@@ -1,0 +1,25 @@
+<h1><i>WELCOME USER</i></h1>
+<ul>
+{% for c in all_clgs %}
+        <li><a href="/sneh/{{ 'testapp/student.html' }}">{{ c.College_Name }}</a> </li>
+
+
+        <h1>{{c.College_id}}</h1>
+        <h1>{{c.College_Name}}</h1>
+        <h1>{{c.Department}}</h1>
+        <ul>
+            {% for stu in all_stu %}
+                <li>{{stu.Student_Name}} </li>
+                <li>{{stu.Enrollment_no}}</li>
+                <li>{{stu.college}}</li>
+                <li>{{stu.Dob}} </li>
+                <li>{{stu.Cgpa}}</li>
+                <li>{{stu.Address}}</li>
+                <li>{{stu.College_Name}}</li>
+                <li>{{stu.Branch}}</li>
+
+                <
+            {% endfor %}
+        </ul>
+{% endfor %}
+</ul>

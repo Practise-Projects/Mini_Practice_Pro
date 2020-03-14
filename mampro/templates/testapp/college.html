@@ -1,0 +1,11 @@
+
+{% if all_clgs %}
+    <ul>
+        <h1>Here Colleges</h1>
+        {% for c in all_clgs %}
+        <li><a href="/sneh/{{ c.College_id }}">{{ c.College_Name }}</a> </li>_
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>You Don't Have any Colleges</h3>
+{%endif%}
